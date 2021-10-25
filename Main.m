@@ -4,10 +4,6 @@
 %*   Please notify me at zolfaghari1992iut@gmail.com if the code is used in any type of application.
 %***************************************************************************************************
 %*   Developer   : Ali Zolfaghari Sichani (10-10-2019)
-%***************************************************************************************************
-%*   References  : 
-%*   https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node111.html
-%*   https://www.ohio.edu/mechanical/thermo/property_tables/combustion
 %*************************************************************************************************** 
 %*   Solving cycle in EES
 %*   Inputs      :
