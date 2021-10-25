@@ -1,7 +1,35 @@
+%***************************************************************************************************
+%*   Optimize thermo cycle by presented code.
+%*   I take no responsibilities for any errors in the code or damage thereby.
+%*   Please notify me at zolfaghari1992iut@gmail.com if the code is used in any type of application.
+%***************************************************************************************************
+%*   Developer   : Ali Zolfaghari Sichani (10-10-2019)
+%***************************************************************************************************
+%*   References  : 
+%*   https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node111.html
+%*   https://www.ohio.edu/mechanical/thermo/property_tables/combustion
+%*************************************************************************************************** 
+%*   Solving cycle in EES
+%*   Inputs      :
+%*   lb,ub    (lower and upper bound : [(P2/P1) (T4) (T3) (etac) (etat) ])
+%*   NP       (number of population   )
+%*   MaxIter  (max. iteration         )
+%*   PC       (factor of non-mutation )
+%*   Outputs      :
+%*   mfuel    (fuel mass flow rate                        )
+%*   T3       (air temperature inlet of combustion        )
+%*   T4       (flue gas temperature outlet of combustion  )
+%*   T7       (stack gas temperature outlet of generator  )
+%*   P2/P1    (compressor pressure ratio                  )
+%*   etac     (compressor efficiency                      )
+%*   etat     (turbine efficiency                         )
+%***************************************************************************************************
+
+
 clear,clc
 close all
-format long
 format compact
+format long
 
 
 
@@ -13,9 +41,13 @@ lb = [3.0 1200 700 0.75 0.75];
 ub = [7.0 1520 900 0.95 0.95];
 NP = 25;
 MaxIter = 50;
-gamma = 1.0;
-NS = 5;
 PC = 0.80;
+
+
+
+
+NS = 5;
+gamma = 1.0;
 
 [X , FX] = GA(lb,ub,NP,PC,MaxIter,gamma,SYS,NS);
 
