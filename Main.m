@@ -32,11 +32,6 @@ format compact
 format long
 
 
-
-CD = cd;
-
-SYS = ['c:\ees32\ees.exe ',CD,'\CycleProject.ees /solve'];
-
 lb = [3.0 1200 700 0.75 0.75];
 ub = [7.0 1520 900 0.95 0.95];
 NP = 25;
@@ -46,6 +41,9 @@ PC = 0.80;
 
 
 
+
+CD = cd;
+SYS = ['c:\ees32\ees.exe ',CD,'\CycleProject.ees /solve'];
 NS = 5;
 gamma = 1.0;
 
