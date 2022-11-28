@@ -4,5 +4,6 @@ The genetic algorithm is a method for solving both constrained and unconstrained
 - Optimizing thermodynamic cycle with genetic algorithm 
 - Using EES and MATLAB (coupled solving)
 
-![image](https://user-images.githubusercontent.com/77577542/138663244-503cc11f-a7cc-4e1f-91a4-2c98e020442e.png)
+![Screenshot 2022-11-28 155648](https://user-images.githubusercontent.com/77577542/204278044-d046f4df-660c-4df4-935c-99b5bf5eb2bc.png)
+
 
